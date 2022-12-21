@@ -1,0 +1,125 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+p.detalles {
+    text-align: center;
+}
+
+header nav {
+    font-size: 12px;
+}
+
+p.precios {
+    font-size: 18px;
+}
+
+p.desc {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+p.descriptor {
+    font-size: 16px;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+header ul li {
+    list-style-type: none;
+    color: black;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+div.burger-menu i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    width: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    margin: auto;
+   
+}
+
+header div.input {
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: darkgray;
+    width: 250;
+    margin-bottom: 10px;
+
+}
+
+div.contenedor {
+    margin: 5px;
+}
+
+div.camion {
+    color: #39b54a;
+    font-size: 20px;
+    border: 2px solid #39b54a;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+div.credito i, div.regalo i, div.seguridad i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+main section article {
+    width: 90vw;
+    margin-bottom: 10px;
+}
+
+main section article div img {
+    width: 90vw;
+    border-top: 1px solid #ebebeb;
+}
+
+.main-navbar {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .top-bar {
+        display: flex;
+        
+    }
+    .burger-menu {
+        display: none;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+
+}
