@@ -2,9 +2,14 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
+body main {
+    margin:auto;
+    width: 90vw;  
+}
 
 h3 {
     font-size: 24px;
+    text-align: center;
 }
 
 h4 {
@@ -14,29 +19,35 @@ h4 {
     text-align: center;
 }
 
-p.detalles {
+.detalles {
     text-align: center;
+    margin-top: -20px;
 }
 
 header nav {
     font-size: 12px;
 }
 
-p.precios {
+.precios {
     font-size: 18px;
+    width: 30%;
 }
 
-p.desc {
+.desc {
     font-size: 16px;
     color: #39b54a;
+    width: 70%;
+    text-align: center;
 }
 
-p.descriptor {
+.descriptor {
     font-size: 16px;
+    display: none;
 }
 
 header {
     background-color: #EAC926;
+    padding: 15px;
 }
 
 header ul li {
@@ -47,79 +58,241 @@ header ul li {
 header ul li a {
     text-decoration: none;
     color: black;
+    text-align: center;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    position:relative
 }
 
-div.burger-menu i {
+.burger-menu {
     background-color: #0044AA;
-    border-radius: 5px;
+    border-radius: 8px;
     color: #FFF;
     display: block;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    width: 40px;
+    width: 30px;
     margin: 10px 0px 20px 0px;
     padding: 10px;
-    margin: auto;
-   
+    margin: auto;  
 }
+.input {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
 
-header div.input {
+.barra-busqueda {
     background-color: #FFF;
-    border: 1px solid #000;
+    border: none;
     color: darkgray;
-    width: 250;
     margin-bottom: 10px;
-
+    width: 90%;
+    display: inline;
+    
 }
 
-div.contenedor {
-    margin: 5px;
+.fa-search {
+    background-color: #FFF;
+    margin-bottom: 10px;
+    padding: 2px 2px;
+    width: 10%;
+    text-align: center;
+    border-radius: 2px;
 }
-
-div.camion {
-    color: #39b54a;
-    font-size: 20px;
-    border: 2px solid #39b54a;
-    width: 40px;
-    height: 40px;
+.camion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px ;
+    height: 30px;
+    background-color: #FFF;
+    border: solid 1px #39b54a;
     border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+}
+.total {
+    display: flex;
+}
+
+footer {
+    margin-top: 50px;
 }
 
 div.credito i, div.regalo i, div.seguridad i {
     color: #1259c3;
     font-size: 2em;
-    margin-bottom: 10px;
     display: block;
     text-align: center;
+    margin-top: 40px;
 }
 
 main section article {
-    width: 90vw;
     margin-bottom: 10px;
 }
 
-main section article div img {
-    width: 90vw;
+main section article img {
+    width: 100%;
+    align-items: center
+}
+
+.contenedor {
     border-top: 1px solid #ebebeb;
+    position: relative;
+    background-color: #FFF;
+    padding: 15px 15px;
 }
+ 
 
-.main-navbar {
+.main-navbar ul {
     display: none;
+    margin: 0px;
+    padding: 0px;
 }
 
-@media (min-width: 768px) {
+.banner {
+    width: 100%
+}
+
+.logo {
+    display: flex;
+    justify-content:left;
+    width: 200px;
+    padding: 10px 1px;
+}
+
+/* Registro */
+.register-form {
+    padding: 20px 15px;
+}
+
+.control-form, .control-form-a {
+    margin-bottom: 15px;
+}
+
+.button-del {
+    width: 100%;
+    background-color: #1259c3;
+    color:#FFF;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color;
+}
+
+.button-del:hover {
+    background-color: #0022AA;
+}
+
+.button-form {
+    width: 100%;
+    background-color: #1259c3;
+    color:#FFF;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color;
+}
+
+.button-form:hover {
+    background-color: #0022AA;
+}
+
+.button-form a {
+    text-decoration: none;
+    color:#FFF;
+}
+
+.control {
+    width: 100%;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: none;
+}
+.button-intereses {
+    margin-bottom: 20px;
+}
+.buttom-control {
+    text-align:justify;
+}
+
+.subtitle {
+    text-align: left;
+}
+
+@media (min-width: 420px) { /* dejo configurado en 420px en lugar de los 361px que pide la consigna
+    para que responda mejor en los dispositivos mobilemás grandes*/
     .top-bar {
         display: flex;
-        
     }
     .burger-menu {
         display: none;
     }
+
     .main-navbar {
         display: flex;
         justify-content: space-between;
+    }
     
+    .main-navbar ul {
+        display: flex;
     }
 
+    .main-navbar li a{
+        margin: 0px 5px;
+    }
 
+    main section article {
+        width: 40vw;
+    }
+
+    section.productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;   
+    }
+  
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: all 0.75s 
+    }
+
+    div.camion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.camion:hover {
+        transition: all 1s;
+        transform: rotate(-90deg)
+    }
+    .descriptor {
+        display: block;
+    }
+
+}
+@media (min-width: 769px) {
+    main section article {
+        width: 20vw;
+    }
+        
+    footer div.iconos {
+        display: flex;
+        justify-content:space-around;
+    }
+    p.copy {
+        display: flex;
+    }
+
+    .credito i:hover, .regalo i:hover, .seguridad i:hover {
+        color:cadetblue;
+    }
 }
