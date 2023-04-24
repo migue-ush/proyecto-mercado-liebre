@@ -42,7 +42,13 @@ header nav {
 
 .descriptor {
     font-size: 16px;
-    display: none;
+    color: #666666;
+    opacity: 0;
+    
+}
+.descriptor:hover {
+    opacity: 1;
+    transition: opacity 900ms;
 }
 
 header {
@@ -237,6 +243,27 @@ main section article img {
         display: none;
     }
 
+    .main-container {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        width: 30vw;
+    }
+
+    .input {
+        width: 30vw;
+        display: flex;
+        margin-left: 2%;
+    } 
+
+    .copy-heather {
+        width: 30vw;
+        display: flex;
+    }
+
     .main-navbar {
         display: flex;
         justify-content: space-between;
@@ -274,12 +301,13 @@ main section article img {
         transition: all 1s;
         transform: rotate(-90deg)
     }
-    .descriptor {
-        display: block;
-    }
 
 }
 @media (min-width: 769px) {
+    .input {
+        margin: 5%;
+    }
+
     main section article {
         width: 20vw;
     }
